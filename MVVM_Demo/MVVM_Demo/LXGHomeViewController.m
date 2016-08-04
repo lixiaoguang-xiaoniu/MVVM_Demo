@@ -21,5 +21,6 @@
     label.frame = CGRectMake(100, 100, 100, 100);
     
     label.clipsToBounds = YES;
+    label.textColor  = [UIColor greenColor];
 }
 @end
