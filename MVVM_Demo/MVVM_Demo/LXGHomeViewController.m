@@ -14,6 +14,7 @@
     self.view.backgroundColor = [UIColor redColor];
     UILabel *label = [[UILabel alloc]init];
     label.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:label];
     
 }
 @end
