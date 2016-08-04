@@ -18,5 +18,7 @@
     label.layer.cornerRadius = 0.5;
     
     label.text = @"my label";
+    
+    label.clipsToBounds = YES;
 }
 @end
