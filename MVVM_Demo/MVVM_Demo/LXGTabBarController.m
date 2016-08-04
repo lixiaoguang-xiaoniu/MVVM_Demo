@@ -41,6 +41,7 @@
     LXGBusinessViewController *BusinessVc = [[LXGBusinessViewController alloc]init];
     [BusinessVc.tabBarItem setImage:[[UIImage imageNamed:@"maps"] imageWithRenderingMode: UIImageRenderingModeAlwaysOriginal]];
     [BusinessVc.tabBarItem setSelectedImage:[[UIImage imageNamed:@"maps_selected"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal ]];
+    BusinessVc.title = @"Business";
     
     LXGNavigationController *NavBusiness = [[LXGNavigationController alloc]initWithRootViewController:BusinessVc];
     [self addChildViewController:NavBusiness];
