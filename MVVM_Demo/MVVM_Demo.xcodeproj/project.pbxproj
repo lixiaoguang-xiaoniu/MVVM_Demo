@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C76490B1D538C0800850CF8 /* LXGBusinessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C76490A1D538C0800850CF8 /* LXGBusinessViewController.m */; };
+		4CC4DA561D5385A3004C8203 /* LXGHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4DA551D5385A3004C8203 /* LXGHomeViewController.m */; };
+		4CC4DA5C1D53883D004C8203 /* LXGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4DA5B1D53883D004C8203 /* LXGTabBarController.m */; };
+		4CC4DA5F1D5388D0004C8203 /* LXGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4DA5E1D5388D0004C8203 /* LXGNavigationController.m */; };
 		D498E8BA1D53847B008A04C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D498E8B91D53847B008A04C4 /* main.m */; };
 		D498E8BD1D53847B008A04C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D498E8BC1D53847B008A04C4 /* AppDelegate.m */; };
-		D498E8C01D53847B008A04C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D498E8BF1D53847B008A04C4 /* ViewController.m */; };
-		D498E8C31D53847B008A04C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D498E8C11D53847B008A04C4 /* Main.storyboard */; };
 		D498E8C51D53847B008A04C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D498E8C41D53847B008A04C4 /* Assets.xcassets */; };
 		D498E8C81D53847B008A04C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D498E8C61D53847B008A04C4 /* LaunchScreen.storyboard */; };
 		D498E8D31D53847B008A04C4 /* MVVM_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D498E8D21D53847B008A04C4 /* MVVM_DemoTests.m */; };
@@ -35,13 +37,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C7649091D538C0800850CF8 /* LXGBusinessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXGBusinessViewController.h; sourceTree = "<group>"; };
+		4C76490A1D538C0800850CF8 /* LXGBusinessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXGBusinessViewController.m; sourceTree = "<group>"; };
+		4CC4DA541D5385A3004C8203 /* LXGHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXGHomeViewController.h; sourceTree = "<group>"; };
+		4CC4DA551D5385A3004C8203 /* LXGHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXGHomeViewController.m; sourceTree = "<group>"; };
+		4CC4DA5A1D53883D004C8203 /* LXGTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXGTabBarController.h; sourceTree = "<group>"; };
+		4CC4DA5B1D53883D004C8203 /* LXGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXGTabBarController.m; sourceTree = "<group>"; };
+		4CC4DA5D1D5388D0004C8203 /* LXGNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXGNavigationController.h; sourceTree = "<group>"; };
+		4CC4DA5E1D5388D0004C8203 /* LXGNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXGNavigationController.m; sourceTree = "<group>"; };
 		D498E8B51D53847B008A04C4 /* MVVM_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D498E8B91D53847B008A04C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D498E8BB1D53847B008A04C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D498E8BC1D53847B008A04C4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D498E8BE1D53847B008A04C4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D498E8BF1D53847B008A04C4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D498E8C21D53847B008A04C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D498E8C41D53847B008A04C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D498E8C71D53847B008A04C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D498E8C91D53847B008A04C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -103,9 +110,14 @@
 			children = (
 				D498E8BB1D53847B008A04C4 /* AppDelegate.h */,
 				D498E8BC1D53847B008A04C4 /* AppDelegate.m */,
-				D498E8BE1D53847B008A04C4 /* ViewController.h */,
-				D498E8BF1D53847B008A04C4 /* ViewController.m */,
-				D498E8C11D53847B008A04C4 /* Main.storyboard */,
+				4CC4DA5A1D53883D004C8203 /* LXGTabBarController.h */,
+				4CC4DA5B1D53883D004C8203 /* LXGTabBarController.m */,
+				4CC4DA5D1D5388D0004C8203 /* LXGNavigationController.h */,
+				4CC4DA5E1D5388D0004C8203 /* LXGNavigationController.m */,
+				4CC4DA541D5385A3004C8203 /* LXGHomeViewController.h */,
+				4CC4DA551D5385A3004C8203 /* LXGHomeViewController.m */,
+				4C7649091D538C0800850CF8 /* LXGBusinessViewController.h */,
+				4C76490A1D538C0800850CF8 /* LXGBusinessViewController.m */,
 				D498E8C41D53847B008A04C4 /* Assets.xcassets */,
 				D498E8C61D53847B008A04C4 /* LaunchScreen.storyboard */,
 				D498E8C91D53847B008A04C4 /* Info.plist */,
@@ -245,7 +257,6 @@
 			files = (
 				D498E8C81D53847B008A04C4 /* LaunchScreen.storyboard in Resources */,
 				D498E8C51D53847B008A04C4 /* Assets.xcassets in Resources */,
-				D498E8C31D53847B008A04C4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +281,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D498E8C01D53847B008A04C4 /* ViewController.m in Sources */,
+				4C76490B1D538C0800850CF8 /* LXGBusinessViewController.m in Sources */,
+				4CC4DA5F1D5388D0004C8203 /* LXGNavigationController.m in Sources */,
+				4CC4DA561D5385A3004C8203 /* LXGHomeViewController.m in Sources */,
 				D498E8BD1D53847B008A04C4 /* AppDelegate.m in Sources */,
 				D498E8BA1D53847B008A04C4 /* main.m in Sources */,
+				4CC4DA5C1D53883D004C8203 /* LXGTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,14 +322,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D498E8C11D53847B008A04C4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D498E8C21D53847B008A04C4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D498E8C61D53847B008A04C4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -498,6 +504,7 @@
 				D498E8E41D53847B008A04C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D498E8E51D53847B008A04C4 /* Build configuration list for PBXNativeTarget "MVVM_DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +513,7 @@
 				D498E8E71D53847B008A04C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D498E8E81D53847B008A04C4 /* Build configuration list for PBXNativeTarget "MVVM_DemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +522,7 @@
 				D498E8EA1D53847B008A04C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

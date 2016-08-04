@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "LXGTabBarController.h"
+
 
 @interface AppDelegate ()
 
@@ -17,6 +19,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    UIWindow *window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    window.rootViewController  = [[LXGTabBarController alloc]init];
+    
+    self.window = window;
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 
