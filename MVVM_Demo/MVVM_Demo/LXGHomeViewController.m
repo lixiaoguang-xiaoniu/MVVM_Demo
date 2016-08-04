@@ -11,7 +11,8 @@
 @implementation LXGHomeViewController
 -(void)viewDidLoad{
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor greenColor];
+    self.view.backgroundColor = [UIColor redColor];
+    UILabel *label = [[UILabel alloc]init];
     
 }
 @end
