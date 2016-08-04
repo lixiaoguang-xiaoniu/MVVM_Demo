@@ -12,7 +12,7 @@
 -(void)viewDidLoad{
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
-    UILabel *label = [[UILabel alloc]init];
+    UIView *view = [[UIView alloc]init];
     
 }
 @end
