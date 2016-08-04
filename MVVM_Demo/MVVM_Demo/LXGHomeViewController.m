@@ -15,6 +15,7 @@
     UILabel *label = [[UILabel alloc]init];
     label.backgroundColor = [UIColor greenColor];
     [self.view addSubview:label];
+    label.layer.cornerRadius = 0.5;
     
 }
 @end
