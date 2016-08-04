@@ -19,5 +19,6 @@
     
     label.text = @"my label";
     label.frame = CGRectMake(100, 100, 100, 100);
+    label.textColor  = [UIColor greenColor];
 }
 @end
