@@ -18,5 +18,6 @@
     label.layer.cornerRadius = 0.5;
     
     label.text = @"my label";
+    label.frame = CGRectMake(100, 100, 100, 100);
 }
 @end
