@@ -35,6 +35,7 @@
     LXGHomeViewController *homeVc = [[LXGHomeViewController alloc]init];
     [homeVc.tabBarItem setImage:[[UIImage imageNamed:@"home"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] ];
     [homeVc.tabBarItem setSelectedImage:[[UIImage imageNamed:@"home_selected"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    homeVc.title = @"Myhome";
     LXGNavigationController *NavHome = [[LXGNavigationController alloc]initWithRootViewController:homeVc];
     [self addChildViewController:NavHome];
     
