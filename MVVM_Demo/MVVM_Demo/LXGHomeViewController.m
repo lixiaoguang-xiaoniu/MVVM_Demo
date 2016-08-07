@@ -11,18 +11,17 @@
 @implementation LXGHomeViewController
 -(void)viewDidLoad{
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
-    UILabel *label = [[UILabel alloc]init];
-    label.backgroundColor = [UIColor greenColor];
-    [self.view addSubview:label];
-    label.layer.cornerRadius = 20;
     
-    label.text = @"my label";
-    label.frame = CGRectMake(100, 100, 100, 100);
+    RACSignal *signal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        [subscriber sendNext:@1];
+        
+        return nil;
+        
+    }];
     
-    label.clipsToBounds = YES;
-    label.textColor  = [UIColor greenColor];
-    
+    [signal subscribeNext:^(id x) {
+        NSLog(@"%@",x);
+    }];
     
 }
 @end
