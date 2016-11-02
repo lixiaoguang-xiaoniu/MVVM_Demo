@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface LXGBusinessViewController : UIViewController
-
+/** name */
+@property (nonatomic, strong) NSString *name;
 @end

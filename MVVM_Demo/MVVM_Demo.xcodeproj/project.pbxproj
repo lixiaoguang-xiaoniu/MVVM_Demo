@@ -50,6 +50,7 @@
 		4CE63A911D54D654003DDBCA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		4D8FF704B9D040837D06872A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5E0368589514B419CCF8C90F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D412C8651DCA1DAC0007C5F7 /* tradeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tradeProtocol.h; sourceTree = "<group>"; };
 		D498E8B51D53847B008A04C4 /* MVVM_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D498E8B91D53847B008A04C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D498E8BB1D53847B008A04C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -143,6 +144,7 @@
 				4CC4DA551D5385A3004C8203 /* LXGHomeViewController.m */,
 				4C7649091D538C0800850CF8 /* LXGBusinessViewController.h */,
 				4C76490A1D538C0800850CF8 /* LXGBusinessViewController.m */,
+				D412C8651DCA1DAC0007C5F7 /* tradeProtocol.h */,
 				D498E8C41D53847B008A04C4 /* Assets.xcassets */,
 				D498E8C61D53847B008A04C4 /* LaunchScreen.storyboard */,
 				D498E8C91D53847B008A04C4 /* Info.plist */,
@@ -414,6 +416,7 @@
 		D498E8E01D53847B008A04C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -461,6 +464,7 @@
 		D498E8E11D53847B008A04C4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
