@@ -1,5 +1,5 @@
 //
-//  tradeProtocol.h
+//  stepOneEntity.h
 //  MVVM_Demo
 //
 //  Created by xiaoniu on 11/2/16.
@@ -7,10 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "tradeProtocol.h"
 
-@protocol tradeProtocol <NSObject>
-@required
-/** name */
-@property (nonatomic, strong,readonly) NSString *name;
-- (void)test;
+@interface stepOneEntity : NSObject <tradeProtocol>
+
 @end

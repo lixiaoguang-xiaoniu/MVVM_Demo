@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+/**用indexPath作为字典的key name*/
 @interface LXGBusinessViewController : UIViewController
-/** name */
-@property (nonatomic, strong) NSString *name;
+
 @end
