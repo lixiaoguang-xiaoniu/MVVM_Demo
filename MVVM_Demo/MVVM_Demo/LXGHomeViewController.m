@@ -8,125 +8,178 @@
 
 #import "LXGHomeViewController.h"
 
-@interface LXGHomeViewController()<UITextFieldDelegate>
-
-{
-    UITextField *textField;
-}
+@interface LXGHomeViewController()
+/** tf */
+@property (nonatomic, strong) UITextField *textField;
+/** tf2 */
+@property (nonatomic, strong) UITextField *passwordField;
+/** btn */
+@property (nonatomic, strong) UIButton *loginBtn;
 @end
 @implementation LXGHomeViewController
 -(void)viewDidLoad{
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    self.textField = [[UITextField alloc]initWithFrame:CGRectMake(50, 100, 200, 50)];
+    self.passwordField = [[UITextField alloc]initWithFrame:CGRectMake(50, 200, 200, 50)];
+    self.textField.backgroundColor = [UIColor lightGrayColor];
+    self.passwordField.backgroundColor = [UIColor lightGrayColor];
     
-//    textField = [[UITextField alloc]init];
-//    textField.frame = CGRectMake(10, 100, 300, 60);
-//    textField.backgroundColor = [UIColor grayColor];
-//    textField.delegate = self;
-//    [self.view addSubview:textField];
-//    
-//    [textField addTarget:self action:@selector(verifyText:) forControlEvents:UIControlEventEditingChanged];
+    [self.view addSubview:self.textField];
+    [self.view addSubview:self.passwordField];
     
-    self.view.frame = CGRectMake(0,0, 414, 736);
-    [self.view addObserver:self forKeyPath:@"frame" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld | NSKeyValueObservingOptionInitial context:@"xxx"];
-    self.view.backgroundColor = [UIColor redColor];
-//    UITableView *tb = [[UITableView alloc]init];
-//    tb.frame = self.view.bounds;
-//    [self.view addSubview:tb];
+    self.loginBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.loginBtn.frame = CGRectMake(100, 300, 100, 40);
+    [self.loginBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.loginBtn setTitle:@"登录" forState:UIControlStateNormal];
+    [self.loginBtn setBackgroundImage:[self imageWithColor:[UIColor lightGrayColor]] forState:UIControlStateDisabled];
+    [self.loginBtn setBackgroundImage:[self imageWithColor:[UIColor yellowColor]] forState:UIControlStateNormal];
+    [self.view addSubview:self.loginBtn];
     
+    //简单订阅
+#if 0
+    [self.textField.rac_textSignal subscribeNext:^(id x) {
+        NSLog(@"%@",x);
+    }];
+#endif
+    //简单信号过滤
+#if 0
+    [[self.textField.rac_textSignal filter:^BOOL(id value) {
+        NSString *text = value;
+        return text.length>3;
+    }] subscribeNext:^(id x) {
+        NSLog(@"%@",x);
+    }];
+#endif
+    //-->步骤分解
+#if 0
+    RACSignal *sourceSignal = self.textField.rac_textSignal;
+    RACSignal *filteredSignal = [sourceSignal filter:^BOOL(id value) {
+        NSString *text = value;
+        return text.length>3;
+    }];
+    [filteredSignal subscribeNext:^(id x) {
+        NSLog(@"%@",x);
+    }];
+#endif
+    
+    
+    //-->简化代码
+#if 0
+    [[self.textField.rac_textSignal filter:^BOOL(NSString *text) {
+        return text.length>3;
+    }] subscribeNext:^(id x) {
+        NSLog(@"%@",x);
+    }];
+#endif
+    
+    //信号转化:map
+#if 0
+    [[[self.textField.rac_textSignal map:^id(NSString *text) {
+        return @(text.length); //基础类型必须要包装成对象
+    }] filter:^BOOL(NSNumber *length) {
+        return length.integerValue > 3;
+    }] subscribeNext:^(id x) {
+        NSLog(@"%@",x);
+    }];
+#endif
+    
+    //用信号刷新UI
+#if 1
+    //建立信号
+    RACSignal *validUserNameSignal = [self.textField.rac_textSignal map:^id(NSString *text) {
+        return @([self isValidUserName:text]);
+    }];
+    RACSignal *validPasswordSignal = [self.passwordField.rac_textSignal map:^id(NSString *text) {
+        return @([self isValidPassword:text]);
+    }];
+    
+    
+    RAC(self.textField,backgroundColor) = [validUserNameSignal map:^id(NSNumber *passwordValid) {
+        return [passwordValid boolValue] ? [UIColor greenColor ] : [UIColor lightGrayColor];
+    }];
+    
+    RAC(self.passwordField,backgroundColor) = [validPasswordSignal map:^id(NSNumber *passwordValid) {
+        return [passwordValid boolValue] ? [UIColor greenColor ] : [UIColor lightGrayColor];
+    }];
+    
+    RACSignal *signUpActiveSignal = [RACSignal combineLatest:@[validUserNameSignal,validPasswordSignal] reduce:^id(NSNumber *userNameValid,NSNumber *passwordValid){
+        return @(userNameValid.boolValue && passwordValid.boolValue);
+    }];
+    
+    [signUpActiveSignal subscribeNext:^(NSNumber *signUpActive) {
+        self.loginBtn.enabled = signUpActive.boolValue;
+    }];
+    
+#endif
+    //rac控制事件
+#if 1
+    [[[[self.loginBtn rac_signalForControlEvents:UIControlEventTouchUpInside] doNext:^(id x) {
+        self.loginBtn.enabled = NO;
+    }] flattenMap:^id(id value) {
+        return [self signInSignal];
+    }] subscribeNext:^(id x) {
+        self.loginBtn.enabled = YES;
+        NSLog(@"Sign In result:%@",x);
+    }];
+    
+#endif
 }
-//-(void)loadViewIfRequired{
-//    
-//    NSLog(@"i'm coming");
-//}
--(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
-    NSLog(@"%@",change);
-    NSLog(@"jskdjdl");
+
+- (BOOL)isValidUserName:(NSString *)text{
+    if(text.length > 3){
+        return YES;
+    }
+    return NO;
 }
 
--(void)setView:(UIView *)view{
-    [super setView:view];
-//    self.view.frame = CGRectMake(200, 200, 200, 200);
- 
+- (BOOL)isValidPassword:(NSString *)text{
+    if(text.length > 3){
+        return YES;
+    }
+    return NO;
 }
-
-//-(void)loadView{
-//    [super loadView];
-////    self.view.frame = CGRectMake(200, 200, 200, 200);
-// 
-//}
-
-
-//-(void)viewDidLayoutSubviews{
-////       self.view.frame = CGRectMake(200, 200, 200, 200); 
-//}
-
+    
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.textField resignFirstResponder];
+}
+
+- (UIImage *)imageWithColor:(UIColor *)color {
+    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
     
-    static NSInteger kkk = 1;
-    kkk = -kkk;
-    if(kkk>0){
-    [textField removeTarget:nil action:nil forControlEvents:UIControlEventEditingChanged];
-        [textField addTarget:self action:@selector(say:) forControlEvents:UIControlEventEditingChanged];
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
+- (void) signInWithUserName:(NSString *)userName password:(NSString *)password completeBlock:(void (^)(BOOL))completeBlock {
+    
+    [NSThread sleepForTimeInterval:1];
+    
+    if([userName isEqualToString:@"michael"]){
+    completeBlock(YES);
     }
     else{
-    [textField removeTarget:nil action:nil forControlEvents:UIControlEventEditingChanged];
-    [textField addTarget:self action:@selector(bark:) forControlEvents:UIControlEventEditingChanged];
+        completeBlock(NO);
     }
-
-
 }
 
--(void)say:(UITextField *)textfieldlocal{
-    NSLog(@"hello");
-}
-- (void)bark:(UITextField *)textfieldlocal{
-    NSLog(@"bark。。。");
-}
--(void)verifyText:(UITextField *)textFieldlocal{
+- (RACSignal *)signInSignal {
     
-    NSLog(@"%@",textFieldlocal.text);
-    NSLog(@"%zd",[self caculateCountWithText:textFieldlocal.text]);
+    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        [self signInWithUserName:self.textField.text password:self.passwordField.text completeBlock:^(BOOL success) {
+            [subscriber sendNext:@(success)];
+            [subscriber sendCompleted];
+        }];
+        return nil;
+    }];
 }
 
-- (NSInteger)caculateCountWithText:(NSString *)text
-{
-    NSInteger length = 0;
-    
-    char *p = (char *)[text cStringUsingEncoding:NSUnicodeStringEncoding];
-    
-    for (NSInteger i = 0; i < [text lengthOfBytesUsingEncoding:NSUnicodeStringEncoding]; i++) {
-        if (*p) {
-            p++;
-            length++;
-        }
-        else {
-            p++;
-        }
-        
-    }
-    return length;
-}
-
-- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
-    
-//    if((textField.text.length > 5) && ![string isEqualToString:@""]){
-//        return  NO;
-//    }
-    
-    return YES;
-
-}
-
-#pragma mark - UITableViewDataSource
-
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-//    return 20;
-//}
-//
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-//    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"hhh"];
-//    return cell;
-//}
 
 @end

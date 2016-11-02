@@ -83,6 +83,11 @@
 
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    
+//    NSLog(@"%@",[UIFont familyNames]);
+    
+    
 ////    [_myStr deleteCharactersInRange:NSMakeRange(0, _myStr.length)];
 //    static NSInteger myNum = 0;
 //    static NSInteger count = 0;
