@@ -22,7 +22,7 @@
 }
 - (void)showViewWithTadeInfo:(id<tradeProtocol>)tradeInfo {
     
-    self.nameLabel.text = tradeInfo.name;
+    self.tradeEntity = tradeInfo;
 }
 
 @end

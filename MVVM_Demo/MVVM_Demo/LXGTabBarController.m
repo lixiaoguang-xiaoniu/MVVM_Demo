@@ -11,6 +11,7 @@
 #import "LXGHomeViewController.h"
 #import "LXGBusinessViewController.h"
 #import "ProtocolTestViewController.h"
+#import "RACdebugVCViewController.h"
 
 @implementation LXGTabBarController
 
@@ -33,6 +34,14 @@
 
 -(void)viewDidLoad{
     [super viewDidLoad];
+    
+    RACdebugVCViewController *RACVC = [[RACdebugVCViewController alloc]init];
+    [RACVC.tabBarItem setImage:[[UIImage imageNamed:@"home"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] ];
+    [RACVC.tabBarItem setSelectedImage:[[UIImage imageNamed:@"home_selected"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    RACVC.title = @"Home";
+    LXGNavigationController *NavRAC = [[LXGNavigationController alloc]initWithRootViewController:RACVC];
+    [self addChildViewController:NavRAC];
+    
     LXGHomeViewController *homeVc = [[LXGHomeViewController alloc]init];
     [homeVc.tabBarItem setImage:[[UIImage imageNamed:@"home"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] ];
     [homeVc.tabBarItem setSelectedImage:[[UIImage imageNamed:@"home_selected"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];

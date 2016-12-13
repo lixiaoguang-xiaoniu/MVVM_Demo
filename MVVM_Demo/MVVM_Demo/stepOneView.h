@@ -11,5 +11,7 @@
 @interface stepOneView : UIView
 
 @property (nonatomic, strong) UILabel *nameLabel;
+/** info */
+@property (nonatomic, strong) id<tradeProtocol> tradeEntity;
 - (void)showViewWithTadeInfo:(id<tradeProtocol>)tradeInfo;
 @end

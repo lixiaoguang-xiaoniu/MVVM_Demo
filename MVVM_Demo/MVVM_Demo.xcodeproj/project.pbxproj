@@ -14,6 +14,7 @@
 		B9C6670E844314D64648AF92 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30A970B816CC89BDBBFCE162 /* Pods.framework */; };
 		D412C8681DCA27A10007C5F7 /* stepOneEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = D412C8671DCA27A10007C5F7 /* stepOneEntity.m */; };
 		D412C86B1DCA2BAE0007C5F7 /* ProtocolTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D412C86A1DCA2BAE0007C5F7 /* ProtocolTestViewController.m */; };
+		D47FDD221DD9B8340036B26C /* RACdebugVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D47FDD211DD9B8340036B26C /* RACdebugVCViewController.m */; };
 		D498E8BA1D53847B008A04C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D498E8B91D53847B008A04C4 /* main.m */; };
 		D498E8BD1D53847B008A04C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D498E8BC1D53847B008A04C4 /* AppDelegate.m */; };
 		D498E8C51D53847B008A04C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D498E8C41D53847B008A04C4 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 		D498E8D31D53847B008A04C4 /* MVVM_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D498E8D21D53847B008A04C4 /* MVVM_DemoTests.m */; };
 		D498E8DE1D53847B008A04C4 /* MVVM_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D498E8DD1D53847B008A04C4 /* MVVM_DemoUITests.m */; };
 		D4A732871DCA3420008708B8 /* stepOneView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4A732861DCA3420008708B8 /* stepOneView.m */; };
+		D4F081631DD1E03400E7395E /* nextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F081621DD1E03400E7395E /* nextViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		D412C8671DCA27A10007C5F7 /* stepOneEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = stepOneEntity.m; sourceTree = "<group>"; };
 		D412C8691DCA2BAE0007C5F7 /* ProtocolTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolTestViewController.h; sourceTree = "<group>"; };
 		D412C86A1DCA2BAE0007C5F7 /* ProtocolTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolTestViewController.m; sourceTree = "<group>"; };
+		D47FDD201DD9B8340036B26C /* RACdebugVCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACdebugVCViewController.h; sourceTree = "<group>"; };
+		D47FDD211DD9B8340036B26C /* RACdebugVCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACdebugVCViewController.m; sourceTree = "<group>"; };
 		D498E8B51D53847B008A04C4 /* MVVM_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D498E8B91D53847B008A04C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D498E8BB1D53847B008A04C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 		D498E8DF1D53847B008A04C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4A732851DCA3420008708B8 /* stepOneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stepOneView.h; sourceTree = "<group>"; };
 		D4A732861DCA3420008708B8 /* stepOneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = stepOneView.m; sourceTree = "<group>"; };
+		D4F081611DD1E03400E7395E /* nextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nextViewController.h; sourceTree = "<group>"; };
+		D4F081621DD1E03400E7395E /* nextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = nextViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,12 +155,16 @@
 				4CC4DA5B1D53883D004C8203 /* LXGTabBarController.m */,
 				4CC4DA5D1D5388D0004C8203 /* LXGNavigationController.h */,
 				4CC4DA5E1D5388D0004C8203 /* LXGNavigationController.m */,
+				D47FDD201DD9B8340036B26C /* RACdebugVCViewController.h */,
+				D47FDD211DD9B8340036B26C /* RACdebugVCViewController.m */,
 				4CC4DA541D5385A3004C8203 /* LXGHomeViewController.h */,
 				4CC4DA551D5385A3004C8203 /* LXGHomeViewController.m */,
 				4C7649091D538C0800850CF8 /* LXGBusinessViewController.h */,
 				4C76490A1D538C0800850CF8 /* LXGBusinessViewController.m */,
 				D412C8691DCA2BAE0007C5F7 /* ProtocolTestViewController.h */,
 				D412C86A1DCA2BAE0007C5F7 /* ProtocolTestViewController.m */,
+				D4F081611DD1E03400E7395E /* nextViewController.h */,
+				D4F081621DD1E03400E7395E /* nextViewController.m */,
 				D4A732851DCA3420008708B8 /* stepOneView.h */,
 				D4A732861DCA3420008708B8 /* stepOneView.m */,
 				D412C8651DCA1DAC0007C5F7 /* tradeProtocol.h */,
@@ -266,6 +276,7 @@
 					D498E8B41D53847B008A04C4 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 4H3W5P5UJX;
+						ProvisioningStyle = Automatic;
 					};
 					D498E8CD1D53847B008A04C4 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -384,7 +395,9 @@
 				D412C8681DCA27A10007C5F7 /* stepOneEntity.m in Sources */,
 				D4A732871DCA3420008708B8 /* stepOneView.m in Sources */,
 				D498E8BA1D53847B008A04C4 /* main.m in Sources */,
+				D47FDD221DD9B8340036B26C /* RACdebugVCViewController.m in Sources */,
 				4CC4DA5C1D53883D004C8203 /* LXGTabBarController.m in Sources */,
+				D4F081631DD1E03400E7395E /* nextViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +540,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4H3W5P5UJX;
 				INFOPLIST_FILE = MVVM_Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xiaoniu.MVVM-Demo";
@@ -540,6 +555,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4H3W5P5UJX;
 				INFOPLIST_FILE = MVVM_Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xiaoniu.MVVM-Demo";

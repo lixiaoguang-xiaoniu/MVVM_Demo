@@ -7,6 +7,7 @@
 //
 
 #import "ProtocolTestViewController.h"
+#import "nextViewController.h"
 #import "stepOneEntity.h"
 #import "stepOneView.h"
 
@@ -30,6 +31,10 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     stepOneEntity *entity = [[stepOneEntity alloc] init];
 //    [self.testView showViewWithTadeInfo:entity];
+//    self.testView.nameLabel.text = self.testView.tradeEntity.name;
+    nextViewController *nextVC = [[nextViewController alloc ] init];
+    nextVC.tradeEntity = entity;
+    [self.navigationController pushViewController:nextVC animated:YES];
     
 }
 
