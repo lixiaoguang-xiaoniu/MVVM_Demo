@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6764A65EB5821B8161358503 /* Pods_protoTypeCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85CF5EA321923AE6CBD17DAA /* Pods_protoTypeCheck.framework */; };
 		D4C9D94B1E014618004C5C1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C9D94A1E014618004C5C1C /* main.m */; };
 		D4C9D94E1E014618004C5C1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C9D94D1E014618004C5C1C /* AppDelegate.m */; };
 		D4C9D9511E014618004C5C1C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C9D9501E014618004C5C1C /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		63B91602205381B21E3794D7 /* Pods-protoTypeCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-protoTypeCheck.release.xcconfig"; path = "Pods/Target Support Files/Pods-protoTypeCheck/Pods-protoTypeCheck.release.xcconfig"; sourceTree = "<group>"; };
+		85CF5EA321923AE6CBD17DAA /* Pods_protoTypeCheck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_protoTypeCheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4C9D9461E014618004C5C1C /* protoTypeCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = protoTypeCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4C9D94A1E014618004C5C1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D4C9D94C1E014618004C5C1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		D4C9D96A1E014618004C5C1C /* protoTypeCheckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = protoTypeCheckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4C9D96E1E014618004C5C1C /* protoTypeCheckUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = protoTypeCheckUITests.m; sourceTree = "<group>"; };
 		D4C9D9701E014618004C5C1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA5531671702D15C1564F254 /* Pods-protoTypeCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-protoTypeCheck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-protoTypeCheck/Pods-protoTypeCheck.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6764A65EB5821B8161358503 /* Pods_protoTypeCheck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85FDBF798395F9EF13E7FCAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA5531671702D15C1564F254 /* Pods-protoTypeCheck.debug.xcconfig */,
+				63B91602205381B21E3794D7 /* Pods-protoTypeCheck.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BA761163023CB900F4F42EDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85CF5EA321923AE6CBD17DAA /* Pods_protoTypeCheck.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D4C9D93D1E014618004C5C1C = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				D4C9D9621E014618004C5C1C /* protoTypeCheckTests */,
 				D4C9D96D1E014618004C5C1C /* protoTypeCheckUITests */,
 				D4C9D9471E014618004C5C1C /* Products */,
+				85FDBF798395F9EF13E7FCAB /* Pods */,
+				BA761163023CB900F4F42EDB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4C9D9731E014618004C5C1C /* Build configuration list for PBXNativeTarget "protoTypeCheck" */;
 			buildPhases = (
+				CE278662D69D029C982ACDC6 /* [CP] Check Pods Manifest.lock */,
 				D4C9D9421E014618004C5C1C /* Sources */,
 				D4C9D9431E014618004C5C1C /* Frameworks */,
 				D4C9D9441E014618004C5C1C /* Resources */,
+				9045CE5ADE06C1183559FC54 /* [CP] Embed Pods Frameworks */,
+				FEF73FE20894E041BC15AEDF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,6 +297,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9045CE5ADE06C1183559FC54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-protoTypeCheck/Pods-protoTypeCheck-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE278662D69D029C982ACDC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FEF73FE20894E041BC15AEDF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-protoTypeCheck/Pods-protoTypeCheck-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D4C9D9421E014618004C5C1C /* Sources */ = {
@@ -425,10 +500,12 @@
 		};
 		D4C9D9741E014618004C5C1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA5531671702D15C1564F254 /* Pods-protoTypeCheck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4H3W5P5UJX;
 				INFOPLIST_FILE = protoTypeCheck/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaoniu.protoTypeCheck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -437,10 +514,12 @@
 		};
 		D4C9D9751E014618004C5C1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63B91602205381B21E3794D7 /* Pods-protoTypeCheck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4H3W5P5UJX;
 				INFOPLIST_FILE = protoTypeCheck/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xiaoniu.protoTypeCheck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -516,6 +595,7 @@
 				D4C9D9751E014618004C5C1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4C9D9761E014618004C5C1C /* Build configuration list for PBXNativeTarget "protoTypeCheckTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +604,7 @@
 				D4C9D9781E014618004C5C1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4C9D9791E014618004C5C1C /* Build configuration list for PBXNativeTarget "protoTypeCheckUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +613,7 @@
 				D4C9D97B1E014618004C5C1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
