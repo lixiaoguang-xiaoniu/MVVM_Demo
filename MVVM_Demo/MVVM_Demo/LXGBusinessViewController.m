@@ -10,7 +10,7 @@
 
 @implementation LXGBusinessViewController
 -(void)viewDidLoad{
-    
+    [super viewDidLoad];
 
 }
 @end
