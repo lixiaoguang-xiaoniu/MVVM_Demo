@@ -10,7 +10,7 @@
 
 @implementation LXGHomeViewController
 -(void)viewDidLoad{
-    
+       [super viewDidLoad]; 
     
 }
 @end
