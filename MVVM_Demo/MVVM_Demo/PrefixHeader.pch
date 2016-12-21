@@ -14,5 +14,6 @@
 
 
 #import "ReactiveCocoa.h"
+#import "Masonry.h"
 
 #endif /* PrefixHeader_pch */
