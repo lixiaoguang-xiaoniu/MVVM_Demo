@@ -1,8 +1,8 @@
 //
 //  AppDelegate.h
-//  protoTypeCheck
+//  MVVM_Demo
 //
-//  Created by xiaoniu on 12/14/16.
+//  Created by xiaoniu on 8/4/16.
 //  Copyright © 2016 xiaoniu. All rights reserved.
 //
 

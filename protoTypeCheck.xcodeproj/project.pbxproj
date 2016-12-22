@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6764A65EB5821B8161358503 /* Pods_protoTypeCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85CF5EA321923AE6CBD17DAA /* Pods_protoTypeCheck.framework */; };
-		D4C9D94B1E014618004C5C1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C9D94A1E014618004C5C1C /* main.m */; };
-		D4C9D94E1E014618004C5C1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C9D94D1E014618004C5C1C /* AppDelegate.m */; };
-		D4C9D9511E014618004C5C1C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C9D9501E014618004C5C1C /* ViewController.m */; };
-		D4C9D9541E014618004C5C1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4C9D9521E014618004C5C1C /* Main.storyboard */; };
-		D4C9D9561E014618004C5C1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4C9D9551E014618004C5C1C /* Assets.xcassets */; };
-		D4C9D9591E014618004C5C1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4C9D9571E014618004C5C1C /* LaunchScreen.storyboard */; };
+		144ADE313930C5B2631795E7 /* Pods_protoTypeCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D243B376D1275C14C7E976 /* Pods_protoTypeCheck.framework */; };
+		D429AD7B1E014B8A0007A700 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D429AD731E014B8A0007A700 /* Assets.xcassets */; };
+		D429AD7C1E014B8A0007A700 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D429AD741E014B8A0007A700 /* LaunchScreen.storyboard */; };
+		D429AD7D1E014B8A0007A700 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D429AD751E014B8A0007A700 /* Info.plist */; };
+		D429AD811E014BC70007A700 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D429AD7F1E014BC70007A700 /* main.m */; };
+		D429AD931E014C320007A700 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D429AD831E014C320007A700 /* AppDelegate.m */; };
+		D429AD941E014C320007A700 /* LXGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D429AD851E014C320007A700 /* LXGTabBarController.m */; };
+		D429AD951E014C320007A700 /* LXGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D429AD871E014C320007A700 /* LXGNavigationController.m */; };
+		D429AD961E014C320007A700 /* LXGHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D429AD891E014C320007A700 /* LXGHomeViewController.m */; };
+		D429AD971E014C320007A700 /* LXGBusinessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D429AD8B1E014C320007A700 /* LXGBusinessViewController.m */; };
+		D429AD981E014C320007A700 /* LXGBusinessVM.m in Sources */ = {isa = PBXBuildFile; fileRef = D429AD8D1E014C320007A700 /* LXGBusinessVM.m */; };
+		D429AD991E014C320007A700 /* LXGBusinessVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D429AD8F1E014C320007A700 /* LXGBusinessVC.m */; };
+		D429AD9A1E014C320007A700 /* LXGUserEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = D429AD911E014C320007A700 /* LXGUserEntity.m */; };
 		D4C9D9641E014618004C5C1C /* protoTypeCheckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C9D9631E014618004C5C1C /* protoTypeCheckTests.m */; };
 		D4C9D96F1E014618004C5C1C /* protoTypeCheckUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C9D96E1E014618004C5C1C /* protoTypeCheckUITests.m */; };
 /* End PBXBuildFile section */
@@ -36,25 +42,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		63B91602205381B21E3794D7 /* Pods-protoTypeCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-protoTypeCheck.release.xcconfig"; path = "Pods/Target Support Files/Pods-protoTypeCheck/Pods-protoTypeCheck.release.xcconfig"; sourceTree = "<group>"; };
-		85CF5EA321923AE6CBD17DAA /* Pods_protoTypeCheck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_protoTypeCheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08706999A650FFD82777BA3F /* Pods-protoTypeCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-protoTypeCheck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-protoTypeCheck/Pods-protoTypeCheck.debug.xcconfig"; sourceTree = "<group>"; };
+		BA369F323B3DDBC8A7239004 /* Pods-protoTypeCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-protoTypeCheck.release.xcconfig"; path = "Pods/Target Support Files/Pods-protoTypeCheck/Pods-protoTypeCheck.release.xcconfig"; sourceTree = "<group>"; };
+		D429AD731E014B8A0007A700 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D429AD741E014B8A0007A700 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D429AD751E014B8A0007A700 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D429AD7F1E014BC70007A700 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D429AD821E014C320007A700 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D429AD831E014C320007A700 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D429AD841E014C320007A700 /* LXGTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXGTabBarController.h; sourceTree = "<group>"; };
+		D429AD851E014C320007A700 /* LXGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXGTabBarController.m; sourceTree = "<group>"; };
+		D429AD861E014C320007A700 /* LXGNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXGNavigationController.h; sourceTree = "<group>"; };
+		D429AD871E014C320007A700 /* LXGNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXGNavigationController.m; sourceTree = "<group>"; };
+		D429AD881E014C320007A700 /* LXGHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXGHomeViewController.h; sourceTree = "<group>"; };
+		D429AD891E014C320007A700 /* LXGHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXGHomeViewController.m; sourceTree = "<group>"; };
+		D429AD8A1E014C320007A700 /* LXGBusinessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXGBusinessViewController.h; sourceTree = "<group>"; };
+		D429AD8B1E014C320007A700 /* LXGBusinessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXGBusinessViewController.m; sourceTree = "<group>"; };
+		D429AD8C1E014C320007A700 /* LXGBusinessVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXGBusinessVM.h; sourceTree = "<group>"; };
+		D429AD8D1E014C320007A700 /* LXGBusinessVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXGBusinessVM.m; sourceTree = "<group>"; };
+		D429AD8E1E014C320007A700 /* LXGBusinessVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXGBusinessVC.h; sourceTree = "<group>"; };
+		D429AD8F1E014C320007A700 /* LXGBusinessVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXGBusinessVC.m; sourceTree = "<group>"; };
+		D429AD901E014C320007A700 /* LXGUserEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXGUserEntity.h; sourceTree = "<group>"; };
+		D429AD911E014C320007A700 /* LXGUserEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXGUserEntity.m; sourceTree = "<group>"; };
+		D429AD921E014C320007A700 /* LXGUserProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXGUserProtocol.h; sourceTree = "<group>"; };
+		D429AD9B1E014E920007A700 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		D4C9D9461E014618004C5C1C /* protoTypeCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = protoTypeCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4C9D94A1E014618004C5C1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D4C9D94C1E014618004C5C1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D4C9D94D1E014618004C5C1C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D4C9D94F1E014618004C5C1C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D4C9D9501E014618004C5C1C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D4C9D9531E014618004C5C1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D4C9D9551E014618004C5C1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D4C9D9581E014618004C5C1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D4C9D95A1E014618004C5C1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4C9D95F1E014618004C5C1C /* protoTypeCheckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = protoTypeCheckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4C9D9631E014618004C5C1C /* protoTypeCheckTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = protoTypeCheckTests.m; sourceTree = "<group>"; };
 		D4C9D9651E014618004C5C1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4C9D96A1E014618004C5C1C /* protoTypeCheckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = protoTypeCheckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4C9D96E1E014618004C5C1C /* protoTypeCheckUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = protoTypeCheckUITests.m; sourceTree = "<group>"; };
 		D4C9D9701E014618004C5C1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EA5531671702D15C1564F254 /* Pods-protoTypeCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-protoTypeCheck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-protoTypeCheck/Pods-protoTypeCheck.debug.xcconfig"; sourceTree = "<group>"; };
+		D7D243B376D1275C14C7E976 /* Pods_protoTypeCheck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_protoTypeCheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6764A65EB5821B8161358503 /* Pods_protoTypeCheck.framework in Frameworks */,
+				144ADE313930C5B2631795E7 /* Pods_protoTypeCheck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,21 +102,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		85FDBF798395F9EF13E7FCAB /* Pods */ = {
+		5CA1F827CD7E0C888FAEC9B0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EA5531671702D15C1564F254 /* Pods-protoTypeCheck.debug.xcconfig */,
-				63B91602205381B21E3794D7 /* Pods-protoTypeCheck.release.xcconfig */,
+				D7D243B376D1275C14C7E976 /* Pods_protoTypeCheck.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9788BE5F686311782540F1D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08706999A650FFD82777BA3F /* Pods-protoTypeCheck.debug.xcconfig */,
+				BA369F323B3DDBC8A7239004 /* Pods-protoTypeCheck.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		BA761163023CB900F4F42EDB /* Frameworks */ = {
+		D429AD7E1E014BBA0007A700 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				85CF5EA321923AE6CBD17DAA /* Pods_protoTypeCheck.framework */,
+				D429AD7F1E014BC70007A700 /* main.m */,
+				D429AD9B1E014E920007A700 /* PrefixHeader.pch */,
 			);
-			name = Frameworks;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		D4C9D93D1E014618004C5C1C = {
@@ -107,8 +135,8 @@
 				D4C9D9621E014618004C5C1C /* protoTypeCheckTests */,
 				D4C9D96D1E014618004C5C1C /* protoTypeCheckUITests */,
 				D4C9D9471E014618004C5C1C /* Products */,
-				85FDBF798395F9EF13E7FCAB /* Pods */,
-				BA761163023CB900F4F42EDB /* Frameworks */,
+				9788BE5F686311782540F1D7 /* Pods */,
+				5CA1F827CD7E0C888FAEC9B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,25 +153,29 @@
 		D4C9D9481E014618004C5C1C /* protoTypeCheck */ = {
 			isa = PBXGroup;
 			children = (
-				D4C9D94C1E014618004C5C1C /* AppDelegate.h */,
-				D4C9D94D1E014618004C5C1C /* AppDelegate.m */,
-				D4C9D94F1E014618004C5C1C /* ViewController.h */,
-				D4C9D9501E014618004C5C1C /* ViewController.m */,
-				D4C9D9521E014618004C5C1C /* Main.storyboard */,
-				D4C9D9551E014618004C5C1C /* Assets.xcassets */,
-				D4C9D9571E014618004C5C1C /* LaunchScreen.storyboard */,
-				D4C9D95A1E014618004C5C1C /* Info.plist */,
-				D4C9D9491E014618004C5C1C /* Supporting Files */,
+				D429AD821E014C320007A700 /* AppDelegate.h */,
+				D429AD831E014C320007A700 /* AppDelegate.m */,
+				D429AD841E014C320007A700 /* LXGTabBarController.h */,
+				D429AD851E014C320007A700 /* LXGTabBarController.m */,
+				D429AD861E014C320007A700 /* LXGNavigationController.h */,
+				D429AD871E014C320007A700 /* LXGNavigationController.m */,
+				D429AD881E014C320007A700 /* LXGHomeViewController.h */,
+				D429AD891E014C320007A700 /* LXGHomeViewController.m */,
+				D429AD8A1E014C320007A700 /* LXGBusinessViewController.h */,
+				D429AD8B1E014C320007A700 /* LXGBusinessViewController.m */,
+				D429AD8C1E014C320007A700 /* LXGBusinessVM.h */,
+				D429AD8D1E014C320007A700 /* LXGBusinessVM.m */,
+				D429AD8E1E014C320007A700 /* LXGBusinessVC.h */,
+				D429AD8F1E014C320007A700 /* LXGBusinessVC.m */,
+				D429AD901E014C320007A700 /* LXGUserEntity.h */,
+				D429AD911E014C320007A700 /* LXGUserEntity.m */,
+				D429AD921E014C320007A700 /* LXGUserProtocol.h */,
+				D429AD731E014B8A0007A700 /* Assets.xcassets */,
+				D429AD741E014B8A0007A700 /* LaunchScreen.storyboard */,
+				D429AD751E014B8A0007A700 /* Info.plist */,
+				D429AD7E1E014BBA0007A700 /* Supporting Files */,
 			);
 			path = protoTypeCheck;
-			sourceTree = "<group>";
-		};
-		D4C9D9491E014618004C5C1C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D4C9D94A1E014618004C5C1C /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		D4C9D9621E014618004C5C1C /* protoTypeCheckTests */ = {
@@ -276,9 +308,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4C9D9591E014618004C5C1C /* LaunchScreen.storyboard in Resources */,
-				D4C9D9561E014618004C5C1C /* Assets.xcassets in Resources */,
-				D4C9D9541E014618004C5C1C /* Main.storyboard in Resources */,
+				D429AD7B1E014B8A0007A700 /* Assets.xcassets in Resources */,
+				D429AD7C1E014B8A0007A700 /* LaunchScreen.storyboard in Resources */,
+				D429AD7D1E014B8A0007A700 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,9 +383,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4C9D9511E014618004C5C1C /* ViewController.m in Sources */,
-				D4C9D94E1E014618004C5C1C /* AppDelegate.m in Sources */,
-				D4C9D94B1E014618004C5C1C /* main.m in Sources */,
+				D429AD971E014C320007A700 /* LXGBusinessViewController.m in Sources */,
+				D429AD931E014C320007A700 /* AppDelegate.m in Sources */,
+				D429AD9A1E014C320007A700 /* LXGUserEntity.m in Sources */,
+				D429AD991E014C320007A700 /* LXGBusinessVC.m in Sources */,
+				D429AD811E014BC70007A700 /* main.m in Sources */,
+				D429AD941E014C320007A700 /* LXGTabBarController.m in Sources */,
+				D429AD981E014C320007A700 /* LXGBusinessVM.m in Sources */,
+				D429AD951E014C320007A700 /* LXGNavigationController.m in Sources */,
+				D429AD961E014C320007A700 /* LXGHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,25 +426,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		D4C9D9521E014618004C5C1C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D4C9D9531E014618004C5C1C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D4C9D9571E014618004C5C1C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D4C9D9581E014618004C5C1C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		D4C9D9711E014618004C5C1C /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -438,6 +457,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/protoTypeCheck/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -484,6 +504,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/protoTypeCheck/PrefixHeader.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -500,7 +521,7 @@
 		};
 		D4C9D9741E014618004C5C1C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA5531671702D15C1564F254 /* Pods-protoTypeCheck.debug.xcconfig */;
+			baseConfigurationReference = 08706999A650FFD82777BA3F /* Pods-protoTypeCheck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4H3W5P5UJX;
@@ -514,7 +535,7 @@
 		};
 		D4C9D9751E014618004C5C1C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63B91602205381B21E3794D7 /* Pods-protoTypeCheck.release.xcconfig */;
+			baseConfigurationReference = BA369F323B3DDBC8A7239004 /* Pods-protoTypeCheck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4H3W5P5UJX;
