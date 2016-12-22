@@ -1,7 +1,7 @@
 platform :ios, '8.0'
-
-target 'protoTypeCheck' do
 use_frameworks!
-pod 'ReactiveCocoa', '~> 4.2.1'
+
+target 'MVVM_Demo' do
+pod 'ReactiveCocoa', '~> 2.5'
 pod 'Masonry', '~> 1.0.1'
 end

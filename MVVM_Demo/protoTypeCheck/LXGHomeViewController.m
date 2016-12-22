@@ -23,15 +23,15 @@
     [btn setBackgroundColor:[UIColor redColor]];
     [self.view addSubview:btn];
     [btn addTarget:self action:@selector(gotonext:) forControlEvents:UIControlEventTouchUpInside];
-    [btn mas_makeConstraints:^(MASConstraintMaker *make){
-        make.center.equalTo(self.view);
-        make.width.equalTo(@80);
-        make.height.equalTo(@40);
-    }];
-    
-    [RACObserve(self, viewModel.userArr) subscribeNext:^(id x) {
-        NSLog(@"%@",x);
-    }];
+//    [btn mas_makeConstraints:^(MASConstraintMaker *make){
+//        make.center.equalTo(self.view);
+//        make.width.equalTo(@80);
+//        make.height.equalTo(@40);
+//    }];
+//    
+//    [RACObserve(self, viewModel.userArr) subscribeNext:^(id x) {
+//        NSLog(@"%@",x);
+//    }];
     
     NSMutableArray *mArr = [NSMutableArray array];
     for (NSInteger i = 0; i < 10; i++) {
